@@ -1,0 +1,19 @@
+1.def  format(num , char):
+return "{} {}".format(num , char)
+print(format(145,'o'))
+
+2.π = 3.14
+r = 84  # radius in meters
+area = π * (r ** 2)
+print("Area of the pond:", area)
+
+water_per_sqm = 1.4 
+total_water = area * water_per_sqm
+print("Total water in the pond:", int(total_water))
+
+3.distance = 490  
+time_minutes = 7
+time_seconds = time_minutes * 60
+speed = distance / time_seconds
+print("Speed (m/s):", int(speed))
+

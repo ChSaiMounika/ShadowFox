@@ -1,0 +1,17 @@
+
+justice_league=["Superman","Batman","Wonder Women","Flash","Aquaman","Green Lantern"]
+1.print(len(justice_league));
+2.justice_league.extend(["Batgirl","Nightwing"])
+print(justice_league)
+3.justice_league.remove("Wonder Women")
+justice_league.insert(0,"Wonder Women")
+print(justice_league)
+4.index_aquaman = justice_league.index("Aquaman")
+justice_league.remove("Superman")
+justice_league.insert(index_aquaman + 1, "Superman")
+print(justice_league)
+5.justice_league = ["Cyborg", "Shazam", "Hawkgirl", "Martian Manhunter", "Green Arrow"]
+print(justice_league)
+6.justice_league.sort()
+print(justice_league)
+

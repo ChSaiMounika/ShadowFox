@@ -1,0 +1,49 @@
+1.
+import random
+
+six = 0
+one = 0
+two_six = 0
+last = 0
+
+for i in range(20):
+    n = random.randint(1,6)
+    print(n)
+
+    if n == 6:
+        six += 1
+    if n == 1:
+        one += 1
+    if n == 6 and last == 6:
+        two_six += 1
+
+    last = n
+
+print("Times rolled 6:", six)
+print("Times rolled 1:", one)
+print("Two 6s in a row:", two_six)
+
+ 
+
+
+
+2.
+total = 100
+
+for i in range(10, total + 10, 10):
+    print("Do 10 jumping jacks")
+
+    tired = input("Are you tired? (yes/no): ")
+
+    if tired == "yes" or tired == "y":
+        skip = input("Do you want to skip the remaining sets? (yes/no): ")
+        if skip == "yes" or skip == "y":
+            print("You completed a total of", i, "jumping jacks")
+            break
+
+    remaining = total - i
+    if remaining > 0:
+        print(remaining, "jumping jacks remaining")
+
+    if i == total:
+        print("Congratulations! You completed the workout")
